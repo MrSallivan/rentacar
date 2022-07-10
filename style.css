@@ -3238,9 +3238,25 @@ body,
 }
 
 .sections-cars{
+	padding-top: 80px;
 	width: 100%;
-	height: 100vh;
+	height: 100%;
+	background-color: #fff;
 }
 .sections-cars h2 {
-	padding-top: 40px;
+	/* padding-top: 40px; */
 }
+/* .owl-dots {
+	display: flex;
+	justify-content: center;
+}
+.owl-dot{
+	width: 10px;
+	height: 10px;
+	background-color: yellow;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+.owl-dot.active {
+	background-color: red;
+} */

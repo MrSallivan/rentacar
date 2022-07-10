@@ -66,7 +66,18 @@
             }
         }); // Partner Carousel End
 
+ 			// Partner Carousel
+		 $('.owl-carousel-cars').owlCarousel({
+			 animateOut: 'slideOutDown',
+			 animateIn: 'flipInX',
+			 items: 1,
+			 margin: 30,
+			 stagePadding: 30,
+			 smartSpeed: 450
+		 });
 
+
+ 			// Partner Carousel End
         // Funfact Count JS
         $('.counter').counterUp({
             delay: 10,

@@ -1,3 +1,5 @@
+
+
 /*global jQuery */
 (function ($) {
 	"use strict";
@@ -67,10 +69,36 @@
 		}); // Partner Carousel End
 
 		// Partner Carousel
-		$(".owl-carousel-cars").owlCarousel({
-			items: 3
-			
+		$(".owl-carousel").owlCarousel({
+			loop: true,
+			margin: 10,
+			responsiveClass: true,
+			responsive: {
+				0: {
+					items: 1
+				},
+				600: {
+					items: 2
+				},
+				1000: {
+					items: 3
+				}
+			}
+
 		});
+
+		var owl = $('.owl-carousel');
+		owl.owlCarousel();
+		// Go to the next item
+		$('.next-slide').click(function () {
+			owl.trigger('next.owl.carousel');
+		})
+		// Go to the previous item
+		$('.prev-slide').click(function () {
+			// With optional speed parameter
+			// Parameters has to be in square bracket '[]'
+			owl.trigger('prev.owl.carousel', [300]);
+		})
 
 
 		// Partner Carousel End

@@ -3247,37 +3247,46 @@ body,
 .sections-cars h2 {
 	/* padding-top: 40px; */
 }
+
 .sections-cars__header {
 	margin-bottom: 40px;
 }
+
 .car-card {
-	max-width: 350px;
+	min-width: 350px;
 }
+
 .owl-stage,
 .owl-item,
 .item,
 .car-card {
 	display: flex;
 }
+
+.item {
+	outline: 3px solid red !important;
+}
+
+/* .item:not(:last-child) {
+	margin-right: 10px;
+} */
+
 .car-card__wrapper {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 }
-/* .owl-carousel-cars.owl-theme {
-	display: flex;
-} */
-/* .owl-dots {
-	display: flex;
-	justify-content: center;
+
+.prev-slide,
+.next-slide {
+	background-color: #ffd000;
+	color: #000 !important;
+	display: inline-block;
+	font-size: 13px;
+	font-weight: 600;
+	margin-top: 20px;
+	padding: 10px 25px;
+	text-transform: uppercase;
+	cursor: pointer;
 }
-.owl-dot{
-	width: 10px;
-	height: 10px;
-	background-color: yellow;
-	border-radius: 50%;
-	margin-right: 10px;
-}
-.owl-dot.active {
-	background-color: red;
-} */
+

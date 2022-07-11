@@ -68,7 +68,7 @@
 
 		// Partner Carousel
 		$(".owl-carousel-cars").owlCarousel({
-			items: 2
+			items: 3
 			
 		});
 

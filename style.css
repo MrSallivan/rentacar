@@ -3253,6 +3253,17 @@ body,
 .car-card {
 	max-width: 350px;
 }
+.owl-stage,
+.owl-item,
+.item,
+.car-card {
+	display: flex;
+}
+.car-card__wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
 /* .owl-carousel-cars.owl-theme {
 	display: flex;
 } */

@@ -162,7 +162,11 @@
 		margin-bottom: 0;
 	}
 }
-
+@media only screen and (max-width: 1000px) {
+	.car-card{
+		flex: 1 1 50%;
+	}
+}
 
 /* ==== Wide Tablet Layout: 767px ==== */
 
@@ -353,7 +357,11 @@
 	}
 
 }
-
+@media only screen and (max-width: 600px) {
+	.car-card {
+		flex: 1 1 100%;
+	}
+}
 /* ==== Mobile Layout: 320px ==== */
 
 @media only screen and (max-width: 767px) {

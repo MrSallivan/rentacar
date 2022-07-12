@@ -85,7 +85,6 @@
 					center: true
 				}
 			}
-
 		});
 
 		var owl = $('.owl-carousel');

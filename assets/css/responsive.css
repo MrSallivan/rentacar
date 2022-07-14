@@ -162,12 +162,21 @@
 		margin-bottom: 0;
 	}
 }
-@media only screen and (max-width: 1000px) {
-	.car-card{
-		flex: 1 1 50%;
+
+@media only screen and (max-width: 768px) and (min-width: 600px) {
+
+	.car-card__more.map-show,
+	.car-card__order.map-show {
+		padding: 10px 15px;
 	}
 }
 
+@media only screen and (max-width: 600px){
+	.owl-item {
+		display: flex;
+		justify-content: center;
+	}
+}
 /* ==== Wide Tablet Layout: 767px ==== */
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -357,11 +366,9 @@
 	}
 
 }
-@media only screen and (max-width: 600px) {
-	.car-card {
-		flex: 1 1 100%;
-	}
-}
+
+
+
 /* ==== Mobile Layout: 320px ==== */
 
 @media only screen and (max-width: 767px) {
@@ -540,5 +547,6 @@
 	.single-our-facility {
 		margin-bottom: 50px;
 	}
+
 
 }

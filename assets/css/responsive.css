@@ -86,79 +86,79 @@
 		padding: 50px 30px 50px 70px;
 	}
 
-	slideshowcontent
-}
-
-.single-testimonial p,
-.single-testimonial h3 {
-	text-align: left;
-}
-
-.client-logo {
-	bottom: auto;
-	left: -70px;
-	margin-left: 0;
-	top: 50%;
-}
 
 
-/* === HOME PAGE TWO RESPONSIVE CSS === */
-.slideshowcontent h1 {
-	font-size: 70px;
-}
 
-.slideshowcontent {
-	font-size: 17px;
-}
+	.single-testimonial p,
+	.single-testimonial h3 {
+		text-align: left;
+	}
 
-.service-image,
-.home2-car-filter {
-	margin-bottom: 50px;
-}
-
-.about-image {
-	margin-top: 0;
-}
-
-.about-feature-item {
-	margin-bottom: 0;
-}
+	.client-logo {
+		bottom: auto;
+		left: -70px;
+		margin-left: 0;
+		top: 50%;
+	}
 
 
-/* === HOME PAGE THREE RESPONSIVE CSS === */
-#book-a-car {
-	padding-top: 0;
-}
+	/* === HOME PAGE TWO RESPONSIVE CSS === */
+	.slideshowcontent h1 {
+		font-size: 70px;
+	}
 
-.booka-car-content {
-	margin-top: -120px;
-}
+	.slideshowcontent {
+		font-size: 17px;
+	}
 
-.ourcar-pic {
-	margin: 0;
-}
+	.service-image,
+	.home2-car-filter {
+		margin-bottom: 50px;
+	}
 
-/* === CAR and ABOUT PAGE RESPONSIVE CSS === */
-.car-list-info {
-	margin-left: -15px;
-}
+	.about-image {
+		margin-top: 0;
+	}
 
-.car-list-content .col-lg-6:nth-child(3) .single-car-wrap {
-	margin-bottom: 0;
-}
+	.about-feature-item {
+		margin-bottom: 0;
+	}
 
-.single-service-item:nth-child(2n+1) .service-item-content {
-	padding-right: 0;
-}
 
-.single-service-item:nth-child(2n+2) .service-item-content {
-	padding-left: 0;
-}
+	/* === HOME PAGE THREE RESPONSIVE CSS === */
+	#book-a-car {
+		padding-top: 0;
+	}
 
-.pricing-details-content .col-lg-6:nth-child(3) .single-pricing-table,
-.single-our-facility {
-	margin-bottom: 0;
-}
+	.booka-car-content {
+		margin-top: -120px;
+	}
+
+	.ourcar-pic {
+		margin: 0;
+	}
+
+	/* === CAR and ABOUT PAGE RESPONSIVE CSS === */
+	.car-list-info {
+		margin-left: -15px;
+	}
+
+	.car-list-content .col-lg-6:nth-child(3) .single-car-wrap {
+		margin-bottom: 0;
+	}
+
+	.single-service-item:nth-child(2n+1) .service-item-content {
+		padding-right: 0;
+	}
+
+	.single-service-item:nth-child(2n+2) .service-item-content {
+		padding-left: 0;
+	}
+
+	.pricing-details-content .col-lg-6:nth-child(3) .single-pricing-table,
+	.single-our-facility {
+		margin-bottom: 0;
+	}
 }
 
 @media only screen and (max-width: 768px) and (min-width: 600px) {

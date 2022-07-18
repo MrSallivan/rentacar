@@ -38,11 +38,11 @@ orderBtns.forEach(item => {
 				</div>
 
 					<div class="form-order__input">
-						<label for="form-order__input_start"><b>С</b></label>
+						<label for="form-order__input_start">С</label>
 						<input id="form-order__input_start" placeholder="с" type="datetime-local" name="order-start"/>
 					</div>
 					<div class="form-order__input">
-						<label for="form-order__input_end"><b>По</b></label>
+						<label for="form-order__input_end">По</label>
 						<input id="form-order__input_end" placeholder="с" type="datetime-local" name="order-end"/>
 					</div>
 					<div class="row">
@@ -59,7 +59,20 @@ orderBtns.forEach(item => {
 					</div>
 			</div>
 			`
+		
 
-
+			let orderStart = document.getElementById('form-order__input_start')
+			let orderEnd = document.getElementById('form-order__input_end')
+			
+			orderStart.oninput = () => {
+				var date1 = new Date(orderStart).getDate();
+			}
+			orderEnd.oninput = () => {
+				var date2 = new Date(orderEnd).getDate();
+			}
+		
+			let dateScore = date2 - date1
+			console.log(dateScore)
+	
 	})
 })

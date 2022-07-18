@@ -90,13 +90,13 @@
 		// Go to the next item
 		$('.next-slide').click(function () {
 			owl.trigger('next.owl.carousel');
-		})
+		});
 		// Go to the previous item
 		$('.prev-slide').click(function () {
 			// With optional speed parameter
 			// Parameters has to be in square bracket '[]'
 			owl.trigger('prev.owl.carousel', [300]);
-		})
+		});
 
 
 		// Partner Carousel End

@@ -15,6 +15,11 @@ orderBtns.forEach(item => {
 		let carCoast = +parentNode.nextSibling.previousSibling.children[1].children[0].innerHTML.slice(3)
 
 		let modalWindow = document.querySelector('.modal-body')
+
+		let start
+		let end
+		let scoreDays = 0
+
 		modalWindow.innerHTML = `
 			<div class="car-card__wrapper">
 				<div class="car-card__image">
@@ -39,11 +44,11 @@ orderBtns.forEach(item => {
 
 					<div class="form-order__input">
 						<label for="form-order__input_start">С</label>
-						<input id="form-order__input_start" placeholder="с" type="datetime-local" name="order-start"/>
+						<input id="form-order__input_start" placeholder="с" type="date" name="order-start"/>
 					</div>
 					<div class="form-order__input">
 						<label for="form-order__input_end">По</label>
-						<input id="form-order__input_end" placeholder="с" type="datetime-local" name="order-end"/>
+						<input id="form-order__input_end" placeholder="с" type="date" name="order-end"/>
 					</div>
 					<div class="row">
 						<div class="col-lg-6 col-md-6">
@@ -57,22 +62,44 @@ orderBtns.forEach(item => {
 							</div>
 						</div>
 					</div>
+					<div class="total-coast">
+						<div>Итого: </div>
+						<div>0 руб.</div>
+					</div>
 			</div>
 			`
-		
 
+		function check() {
 			let orderStart = document.getElementById('form-order__input_start')
 			let orderEnd = document.getElementById('form-order__input_end')
-			
+		
 			orderStart.oninput = () => {
-				var date1 = new Date(orderStart).getDate();
+				let date1 = new Date(orderStart.value)
+				start = Date.parse(date1)
+				console.log(start)
 			}
 			orderEnd.oninput = () => {
-				var date2 = new Date(orderEnd).getDate();
+				var date2 = new Date(orderEnd.value)
+				end = Date.parse(date2)
+				scoreDays = Math.floor(Math.abs(end - start) / (1000 * 60 * 60 * 24))
+				let coastDiv = document.querySelector('.total-coast')
+				coastDiv.innerHTML = `
+					<div>Итого: </div>
+					<div>${(scoreDays + 1)*carCoast} руб.</div>
+				`
 			}
-		
-			let dateScore = date2 - date1
-			console.log(dateScore)
-	
+			let modal = document.querySelector('#OrderModalCenter')
+			let modalClose = modal.classList.toString().split(' ').includes('show')
+			
+			if(!modalClose){
+				clearInterval(interval)
+			}
+		}
+
+		let interval = setInterval(check, 100)
+		check()
+
+
 	})
+
 })

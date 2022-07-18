@@ -3368,3 +3368,9 @@ body,
 	font-weight: 700;
 	cursor: pointer;
 }
+.total-coast {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-weight: 700;
+}

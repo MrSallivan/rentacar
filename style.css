@@ -3351,3 +3351,17 @@ body,
 .close:hover {
 	color: var(--yellow);
 }
+.form-order__input {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 15px;
+}
+.form-order__input label{
+	margin-bottom: 0;
+	margin-right: 20px;
+}
+.form-order__input label{
+	margin-bottom: 0;
+	margin-right: 20px;
+}

@@ -80,7 +80,7 @@
 				},
 				1000: {
 					items: 3,
-					center: true
+					// center: true
 				}
 			}
 		});

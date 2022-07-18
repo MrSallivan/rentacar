@@ -3238,6 +3238,11 @@ body,
 	margin-top: 20px;
 	cursor: pointer;
 }
+.prev-slide svg,
+.next-slide svg {
+	width: 80px;
+	height: 40px;
+}
 
 .car-card__title {
 	text-align: center;

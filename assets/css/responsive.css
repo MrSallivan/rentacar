@@ -192,6 +192,19 @@
 		font-size: 20px !important;
 		text-align: center !important;
 	}
+
+	.carclass-area__content {
+		flex-wrap: wrap;
+	}
+
+	.carclass-area__item {
+		flex: 0 1 50%;
+		justify-content: space-between;
+	}
+
+	.carclass-area__item_gruz {
+		margin: 0 auto;
+	}
 }
 
 @media only screen and (max-width: 991.98px) {
@@ -643,5 +656,11 @@
 
 	.single-footer-widget h2 .logo img {
 		margin-bottom: 0;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.input-submit button {
+		width: 100%;
 	}
 }

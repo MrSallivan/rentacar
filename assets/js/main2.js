@@ -1,5 +1,6 @@
 let orderBtns = document.querySelectorAll('a[data-target="#OrderModalCenter"]')
-
+let detailsBtns = document.querySelectorAll('a.car-card__more.map-show')
+console.log(detailsBtns)
 
 orderBtns.forEach(item => {
 	item.addEventListener('mousedown', (e) => {
@@ -41,7 +42,7 @@ orderBtns.forEach(item => {
 					</div>
 					<hr>
 				</div>
-
+					 <input type="hidden" name="admin_email[]" value="alexnikolaenko@yandex.ru">
 					<div class="form-order__input">
 						<label for="form-order__input_start">С</label>
 						<input id="form-order__input_start" placeholder="с" type="date" name="order-start"/>
@@ -95,11 +96,47 @@ orderBtns.forEach(item => {
 				clearInterval(interval)
 			}
 		}
-
 		let interval = setInterval(check, 100)
 		check()
+	})
+})
 
+detailsBtns.forEach(item=>{
+	item.addEventListener('mousedown', (e) => {
+		let parentNode = e.target.parentNode.parentNode
+		let carTitle = parentNode.previousElementSibling.childNodes[0].nodeValue
+		localStorage.setItem('carTitle', carTitle)
+		let cartPropertys = parentNode.nextSibling.previousSibling.children[2]
+		console.log(cartPropertys)
+		localStorage.setItem('cartPropertys', cartPropertys.outerHTML)
+		let carText = parentNode.nextSibling.previousSibling.children[3].textContent
+		localStorage.setItem('cartText', carText)
+		let carBrand = cartPropertys.children[0].children[0].innerHTML
+		localStorage.setItem('carBrand', carBrand)
+		let carYear = cartPropertys.children[1].children[0].innerHTML
+		localStorage.setItem('carYear', carYear)
+		let carEngine = cartPropertys.children[2].children[0].innerHTML
+		let carDrive = cartPropertys.children[3].children[0].innerHTML
+		let carTransmis = cartPropertys.children[4].children[0].innerHTML
+		let carImageSrc = parentNode.nextSibling.previousSibling.children[0].children[0].src
+		let carImageAlt = parentNode.nextSibling.previousSibling.children[0].children[0].alt
+		let carCoast = +parentNode.nextSibling.previousSibling.children[1].children[0].innerHTML.slice(3)
+		localStorage.setItem('carCoast', carCoast)
 
 	})
-
 })
+
+let h2 = document.querySelector('.car-details-content-h2')
+let carBrand = localStorage.getItem('carBrand')
+let carTitle = localStorage.getItem('carTitle')
+let carCoast = localStorage.getItem('carCoast')
+h2.innerHTML = `${carTitle} <span class="price">От <b class="coast-detail">${carCoast}</b>руб.</span>`
+let cartPropertys = localStorage.getItem('cartPropertys')
+let prop = document.querySelector('.sidebar-body')
+prop.innerHTML = `${cartPropertys}`
+let carText = localStorage.getItem('cartText')
+let divCarText = document.querySelector('.car-details-infotext')
+divCarText.textContent = `${carText}`
+let inputNameCarInDetails = document.querySelector('.nameCarInDetails')
+inputNameCarInDetails.setAttribute('value', carTitle)
+console.log(inputNameCarInDetails)

@@ -1,6 +1,5 @@
 let orderBtns = document.querySelectorAll('a[data-target="#OrderModalCenter"]')
 let detailsBtns = document.querySelectorAll('a.car-card__more.map-show')
-console.log(detailsBtns)
 
 orderBtns.forEach(item => {
 	item.addEventListener('mousedown', (e) => {
@@ -107,7 +106,6 @@ detailsBtns.forEach(item=>{
 		let carTitle = parentNode.previousElementSibling.childNodes[0].nodeValue
 		localStorage.setItem('carTitle', carTitle)
 		let cartPropertys = parentNode.nextSibling.previousSibling.children[2]
-		console.log(cartPropertys)
 		localStorage.setItem('cartPropertys', cartPropertys.outerHTML)
 		let carText = parentNode.nextSibling.previousSibling.children[3].textContent
 		localStorage.setItem('cartText', carText)
@@ -118,7 +116,15 @@ detailsBtns.forEach(item=>{
 		let carEngine = cartPropertys.children[2].children[0].innerHTML
 		let carDrive = cartPropertys.children[3].children[0].innerHTML
 		let carTransmis = cartPropertys.children[4].children[0].innerHTML
-		let carImageSrc = parentNode.nextSibling.previousSibling.children[0].children[0].src
+		let carImages = parentNode.nextSibling.previousSibling.children[0].children
+		let arr = [].slice.call(carImages);
+		arr.forEach(item=>{
+			console.log(item.outerHTML.toString())
+		})
+		console.log(arr)
+		localStorage.setItem('carImages', JSON.stringify(arr))
+		let carImagesLength = carImages.length
+		localStorage.setItem('carImagesLength', carImagesLength)
 		let carImageAlt = parentNode.nextSibling.previousSibling.children[0].children[0].alt
 		let carCoast = +parentNode.nextSibling.previousSibling.children[1].children[0].innerHTML.slice(3)
 		localStorage.setItem('carCoast', carCoast)
@@ -139,3 +145,9 @@ let divCarText = document.querySelector('.car-details-infotext')
 divCarText.textContent = `${carText}`
 let inputNameCarInDetails = document.querySelector('.nameCarInDetails')
 inputNameCarInDetails.setAttribute('value', carTitle)
+//Вставка картинок из карточки в описание
+let carImages = JSON.parse(localStorage.getItem('carImages'))
+let carImagesLength = localStorage.getItem('carImagesLength')
+console.log(carImages, carImagesLength)
+let carPrevDiv = document.querySelector('.car-preview-crousel')
+

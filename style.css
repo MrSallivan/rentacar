@@ -3284,6 +3284,9 @@ body,
 	overflow: hidden;
 	position: relative;
 }
+.car-card__img:not(:first-child){
+	display: none !important;
+}
 
 .car-card__img {
 	width: 100%;

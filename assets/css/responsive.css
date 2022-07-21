@@ -205,6 +205,10 @@
 	.carclass-area__item_gruz {
 		margin: 0 auto;
 	}
+	.car-details-content-h2 {
+		display: flex;
+		flex-direction: column;
+	}
 }
 
 @media only screen and (max-width: 991.98px) {

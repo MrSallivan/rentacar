@@ -139,4 +139,3 @@ let divCarText = document.querySelector('.car-details-infotext')
 divCarText.textContent = `${carText}`
 let inputNameCarInDetails = document.querySelector('.nameCarInDetails')
 inputNameCarInDetails.setAttribute('value', carTitle)
-console.log(inputNameCarInDetails)

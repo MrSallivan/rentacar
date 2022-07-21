@@ -2559,6 +2559,7 @@ body,
 }
 
 .input-submit button {
+	color: #000;
 	background-color: #ffd000;
 	border: medium none;
 	cursor: pointer;
@@ -2991,6 +2992,7 @@ body,
 	background-size: cover;
 	color: #fff;
 	padding-top: 221px;
+	height: 100%;
 }
 
 .number {
@@ -3231,9 +3233,11 @@ body,
 .car-card:hover {
 	background-color: rgba(248, 248, 248, .5);
 }
+
 .aboutcarstory {
 	display: none;
 }
+
 .car-card__wrapper {
 	display: flex;
 	flex-direction: column;
@@ -3526,6 +3530,34 @@ a[data-toggle]:hover {
 .detail-orderbtn:hover {
 	color: var(--yellow) !important;
 }
-.nameCarInDetails{
+
+.nameCarInDetails {
 	display: none;
+}
+
+.startdate-input input[type="date"] {
+	height: 46px !important;
+}
+
+.enddate-input input[type="date"] {
+	height: 46px !important;
+}
+
+.sidebar-body__linktel {
+	display: block;
+	text-decoration: none;
+	color: #000 !important;
+	transition: color .3s ease;
+}
+
+.sidebar-body__linktel:hover {
+	color: var(--yellow);
+}
+
+.form-order__input input[id="form-order__input_start"] {
+	height: 40.4px !important;
+}
+
+.form-order__input input[id="form-order__input_end"] {
+	height: 40.4px !important;
 }

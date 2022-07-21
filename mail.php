@@ -67,3 +67,4 @@ try {
 } catch (Exception $e) {
   $status = "Сообщение не было отправлено. Причина ошибки: {$mail->ErrorInfo}";
 }
+header('location: ./order.html');

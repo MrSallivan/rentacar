@@ -97,7 +97,7 @@
 				<div class="row">
 					<!--== Logo Start ==-->
 					<div class="col-lg-4">
-						<a href="car-details.html" class="logo">
+						<a href="index.html" class="logo">
 							<img src="assets/img/logo_yep.png" alt="JSOFT">
 						</a>
 					</div>
@@ -178,31 +178,31 @@
 							<div class="review-area">
 								<h3 class="review-area-h3">Забронировать автомобиль</h3>
 								<div class="review-form">
-									<form action="index.html">
+									<form action="mail.php" method="post">
 										<div class="row">
 											<input type="text" name="nameCarInDetails" class="nameCarInDetails" value="">
 											<div class="col-lg-6 col-md-6">
 												<div class="name-input">
-													<input type="text" placeholder="Имя">
+													<input type="text" placeholder="Имя" name="name">
 												</div>
 											</div>
 
 											<div class="col-lg-6 col-md-6">
 												<div class="email-input">
-													<input type="tel" placeholder="Телефон" required>
+													<input type="tel" placeholder="Телефон" required name="tel">
 												</div>
 											</div>
 										</div>
 										<div class="row row__detailcar-form">
 											<div class="col-lg-6 col-md-6">
 												<div class="startdate-input">
-													<input type="date">
+													<input type="date" placeholder="c" name="date-start">
 												</div>
 											</div>
 
 											<div class="col-lg-6 col-md-6">
 												<div class="enddate-input">
-													<input type="date">
+													<input type="date" placeholder="по" name="date-end">
 												</div>
 											</div>
 										</div>
@@ -249,7 +249,9 @@
 							<h3>Для дополнительных вопросов</h3>
 
 							<div class="sidebar-body">
-								<p><i class="fa fa-mobile"></i> +999 888 55 44</p>
+								<a class="sidebar-body__linktel" href="tel:+999 888 77 66">
+									<p><i class="fa fa-mobile"></i> +999 888 55 44</p>
+								</a>
 								<p><i class="fa fa-clock-o"></i> Пн. - Вс. 8.00 - 18.00</p>
 							</div>
 						</div>
@@ -314,12 +316,12 @@
 								<div class="row">
 									<div class="col-lg-6 col-md-6">
 										<div class="name-input">
-											<input type="text" placeholder="Имя">
+											<input type="text" placeholder="Имя" name="name">
 										</div>
 									</div>
 									<div class="col-lg-6 col-md-6">
 										<div class="email-input">
-											<input type="email" placeholder="Телефон">
+											<input type="tel" placeholder="Телефон" name="tel">
 										</div>
 									</div>
 								</div>
@@ -342,8 +344,8 @@
 						<div class="widget-body">
 							<ul class="get-touch">
 								<li><i class="fa fa-map-marker"></i> Россия, Сочи</li>
-								<li><i class="fa fa-mobile"></i> +7 914 540 7440</li>
-								<li><i class="fa fa-envelope"></i> email@gmail.com</li>
+								<li><a href="tel:+79145407440"><i class="fa fa-mobile"></i> +7 914 540 7440</a></li>
+								<li><a href="mailto:email@gmail.com"><i class="fa fa-mobile"></i> email@gmail.com</a></li>
 								<div class="header-social-icons">
 									<a href="#"><i class="fa fa-vk"></i></a>
 									<a href="#"><i class="fa fa-instagram"></i></a>

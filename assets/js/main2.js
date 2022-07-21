@@ -118,11 +118,12 @@ detailsBtns.forEach(item=>{
 		let carTransmis = cartPropertys.children[4].children[0].innerHTML
 		let carImages = parentNode.nextSibling.previousSibling.children[0].children
 		let arr = [].slice.call(carImages);
+		let arrImg =[]
 		arr.forEach(item=>{
-			console.log(item.outerHTML.toString())
+			arrImg.push(item.outerHTML.toString())
 		})
-		console.log(arr)
-		localStorage.setItem('carImages', JSON.stringify(arr))
+		console.log(arrImg)
+		localStorage.setItem('carImages', JSON.stringify(arrImg))
 		let carImagesLength = carImages.length
 		localStorage.setItem('carImagesLength', carImagesLength)
 		let carImageAlt = parentNode.nextSibling.previousSibling.children[0].children[0].alt
@@ -149,5 +150,12 @@ inputNameCarInDetails.setAttribute('value', carTitle)
 let carImages = JSON.parse(localStorage.getItem('carImages'))
 let carImagesLength = localStorage.getItem('carImagesLength')
 console.log(carImages, carImagesLength)
-let carPrevDiv = document.querySelector('.car-preview-crousel')
 
+
+for(let i = 0; i < carImagesLength; i++) {
+	let imgStr = carImages[i]
+	imgStr = imgStr.trim().split(" ")
+	imgStr = imgStr[2].slice(5).slice(0, -1)
+	
+	console.log(imgStr)
+}

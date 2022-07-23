@@ -1,0 +1,22 @@
+<div class="car-preview-crousel"> -->
+							<div class="single-car-preview">
+								<div class="p-car-thumbnails">
+									<a class="car-hover" href="assets/img/car/car-1.jpg">
+										<img src="assets/img/car/car-1.jpg">
+									</a>
+								</div>
+							</div>
+							<div class="single-car-preview">
+								<div class="p-car-thumbnails">
+									<a class="car-hover" href="assets/img/car/car-3.jpg">
+										<img src="assets/img/car/car-3.jpg" alt="JSOFT">
+									</a>
+								</div>
+							</div>
+							<div class="single-car-preview">
+								<div class="p-car-thumbnails">
+									<a class="car-hover" href="assets/img/car/car-6.jpg">
+										<img src="assets/img/car/car-6.jpg" alt="JSOFT">
+									</a>
+								</div>
+							</div>

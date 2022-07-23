@@ -3284,9 +3284,10 @@ body,
 	overflow: hidden;
 	position: relative;
 }
-.car-card__img:not(:first-child){
+
+/* .car-card__img:not(:first-child) {
 	display: none !important;
-}
+} */
 
 .car-card__img {
 	width: 100%;
@@ -3297,6 +3298,13 @@ body,
 	top: 0;
 	left: 0;
 }
+
+/* .car-hover .car-card__img {
+
+	object-fit: cover;
+	object-position: center;
+	position: relative;
+} */
 
 .car-card__price {
 	display: flex;

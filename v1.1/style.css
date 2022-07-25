@@ -1,5 +1,6 @@
 :root {
 	--orange-hover: rgba(253, 126, 20, .8);
+	--white-text: #fff;
 }
 
 /*== Theme Defualt CSS ==*/
@@ -42,7 +43,7 @@
 }
 
 .section-title .title-line {
-	color: #ffd000;
+	color: var(--orange);
 	position: relative;
 }
 
@@ -82,8 +83,9 @@
 	display: none;
 	position: fixed;
 	right: 30px;
-	width: 30px;
+	width: 40px;
 	z-index: 9999;
+	transform: rotate(-90deg);
 }
 
 /*== Theme Defualt CSS ==*/
@@ -1260,7 +1262,7 @@ a.car-hover img {
 
 
 #footer-area a {
-	color: #ffd000;
+	color: var(--white-text);
 }
 
 .footer-widget-area {
@@ -1407,7 +1409,6 @@ a.car-hover img {
 
 
 .get-touch {
-	color: #ffd000;
 	font-size: 15px;
 	font-weight: 600;
 	line-height: 2.5;
@@ -2363,7 +2364,7 @@ body,
 }
 
 .single-sidebar h3 {
-	background-color: #ffd000;
+	background-color: var(--orange);
 	color: #222;
 	font-size: 18px;
 	padding: 12px 5px;
@@ -2389,7 +2390,7 @@ body,
 }
 
 .sidebar-body i.fa {
-	color: #ffd000;
+	color: var(--orange);
 	font-size: 17px;
 	margin-right: 4px;
 	text-align: center;
@@ -2457,8 +2458,8 @@ body,
 }
 
 .sidebar-body .social-icons a i:hover {
-	background-color: #ffd000;
-	border-color: #ffd000;
+	background-color: var(--orange);
+	border-color: var(--orange);
 	color: #fff;
 }
 
@@ -2467,7 +2468,7 @@ body,
 ================================*/
 
 .car-details-content h2 {
-	border-bottom: 1px solid #ffd000;
+	border-bottom: 1px solid var(--orange);
 	font-weight: 400;
 	margin-bottom: 20px;
 	padding-bottom: 10px;
@@ -2569,7 +2570,7 @@ body,
 .review-area input:focus,
 .contact-form textarea:focus,
 .review-area textarea:focus {
-	border-color: #ffd000;
+	border-color: var(--orange);
 }
 
 .message-input,
@@ -2584,7 +2585,7 @@ body,
 
 .input-submit button {
 	color: #000;
-	background-color: #ffd000;
+	background-color: var(--orange);
 	border: medium none;
 	cursor: pointer;
 	font-size: 12px;
@@ -2597,7 +2598,7 @@ body,
 }
 
 .input-submit button:hover {
-	background-color: #fab702;
+	background-color: var(--orange-hover);
 }
 
 /*==============================
@@ -3283,7 +3284,7 @@ body,
 .next-slide {
 	max-width: 80px;
 	max-height: 40px;
-	background-color: #ffd000;
+	background-color: var(--orange);
 	color: #000 !important;
 	display: flex;
 	margin-top: 20px;
@@ -3382,6 +3383,16 @@ body,
 	flex-direction: column;
 	justify-content: space-between;
 	text-align: center;
+}
+
+.single-footer-widget:nth-child(2) {
+	justify-content: flex-start;
+
+}
+
+.footer-service {
+	height: 100%;
+	font-weight: 700;
 }
 
 .widget-body .mainmenu ul {
@@ -3504,7 +3515,7 @@ a[data-toggle] {
 }
 
 a[data-toggle]:hover {
-	color: #dfb709c5 !important;
+	color: var(--orange) !important;
 	background-color: #000;
 }
 
@@ -3588,4 +3599,26 @@ a[data-toggle]:hover {
 
 .form-order__input input[id="form-order__input_end"] {
 	height: 40.4px !important;
+}
+
+.car-card__more.map-show:hover {
+	background-color: var(--orange-hover);
+}
+
+button.car-card__order.map-show:hover {
+	color: var(--orange) !important;
+}
+
+.footer-service {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.footer-widget-area a:hover {
+	color: var(--orange) !important;
+}
+
+.footer-widget-area a.map-show[target="_blank"]:hover {
+	color: #000 !important;
 }

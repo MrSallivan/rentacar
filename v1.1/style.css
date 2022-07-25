@@ -1,3 +1,7 @@
+:root {
+	--orange-hover: rgba(253, 126, 20, .8);
+}
+
 /*== Theme Defualt CSS ==*/
 
 .overlay {
@@ -97,7 +101,7 @@
 }
 
 #header-top i {
-	color: #ffd000;
+	color: var(--orange);
 	font-size: 15px;
 	margin-right: 2px;
 }
@@ -113,7 +117,7 @@
 #header-area .header-social-icons a:hover i.fa,
 #header-area .mainmenu ul li.active a,
 #header-area .mainmenu ul li:hover a {
-	color: #ffd000;
+	color: var(--orange);
 }
 
 header.fixTotop #header-top {
@@ -201,7 +205,7 @@ header.fixTotop #header-bottom {
 
 .mainmenu ul li ul li.active a,
 .mainmenu ul li ul li a:hover {
-	background-color: #ffd000;
+	background-color: var(--orange);
 }
 
 #header-bottom .container {
@@ -217,7 +221,7 @@ header.fixTotop #header-bottom {
 }
 
 a.slicknav_btn {
-	background-color: #ffd000;
+	background-color: var(--orange);
 	border-radius: 2px;
 	height: 35px;
 	margin: 0;
@@ -254,7 +258,7 @@ a.slicknav_btn {
 
 .slicknav_nav {
 	background-color: #000;
-	border-top: 1px solid #ffd000;
+	border-top: 1px solid var(--orange);
 	position: absolute;
 	top: 65px;
 	width: 100%;
@@ -271,7 +275,7 @@ a.slicknav_btn {
 
 .slicknav_nav ul li.slicknav_parent a:hover,
 .slicknav_nav ul li a:hover {
-	background-color: #ffd000;
+	background-color: var(--orange);
 	border-radius: 0px;
 }
 
@@ -732,16 +736,19 @@ a.slicknav_btn {
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 	margin-bottom: 30px;
 }
+
 .single-car-preview {
 	display: flex;
 	flex-grow: 1;
-	
+
 }
-.p-car-thumbnails{
+
+.p-car-thumbnails {
 	flex-grow: 1;
 	display: flex;
-	
+
 }
+
 .p-car-thumbnails a.car-hover {
 	display: flex;
 	flex-grow: 1;
@@ -1412,7 +1419,7 @@ a.car-hover img {
 }
 
 .map-show {
-	background-color: #ffd000;
+	background-color: var(--orange);
 	color: #000 !important;
 	display: inline-block;
 	font-size: 13px;
@@ -1501,7 +1508,7 @@ body,
 }
 
 .slideshowcontent h1 {
-	color: #ffd000;
+	color: var(--orange);
 	margin-bottom: 20px;
 }
 
@@ -3466,7 +3473,7 @@ body,
 }
 
 .slideshowcontent_span {
-	color: var(--yellow);
+	color: var(--orange);
 	text-align: left;
 }
 
@@ -3481,7 +3488,7 @@ a.map-show {
 }
 
 a.map-show:hover {
-	background-color: #dfb709c5;
+	background-color: var(--orange-hover);
 }
 
 .slideshowcontent_btn {

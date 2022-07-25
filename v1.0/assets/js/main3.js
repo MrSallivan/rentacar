@@ -43,7 +43,9 @@ for (let i = 0; i < +carImagesLength; i++) {
 }
 
 
-
-
+let ImgsScrol = document.querySelectorAll('.car-hover .car-card__img')
+ImgsScrol.forEach(item=>{
+	item.classList.remove('car-card__img')
+})
 
 

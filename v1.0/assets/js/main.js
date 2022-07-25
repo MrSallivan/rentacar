@@ -246,7 +246,7 @@
 		$(".car-preview-crousel").owlCarousel({
 			loop: true,
 			items: 1,
-			autoplay: true,
+			autoplay: false,
 			autoplayHoverPause: true,
 			autoplayTimeout: 2000,
 			nav: false,

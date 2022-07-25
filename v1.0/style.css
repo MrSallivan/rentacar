@@ -732,10 +732,27 @@ a.slicknav_btn {
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 	margin-bottom: 30px;
 }
-
+.single-car-preview {
+	display: flex;
+	flex-grow: 1;
+	
+}
+.p-car-thumbnails{
+	flex-grow: 1;
+	display: flex;
+	
+}
 .p-car-thumbnails a.car-hover {
-	display: block;
+	display: flex;
+	flex-grow: 1;
 	position: relative;
+}
+
+a.car-hover img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
 }
 
 .p-car-thumbnails a.car-hover::after {
@@ -3285,9 +3302,9 @@ body,
 	position: relative;
 }
 
-/* .car-card__img:not(:first-child) {
+.car-card__img:not(:first-child) {
 	display: none !important;
-} */
+}
 
 .car-card__img {
 	width: 100%;
@@ -3298,13 +3315,6 @@ body,
 	top: 0;
 	left: 0;
 }
-
-/* .car-hover .car-card__img {
-
-	object-fit: cover;
-	object-position: center;
-	position: relative;
-} */
 
 .car-card__price {
 	display: flex;

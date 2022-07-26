@@ -3528,7 +3528,7 @@ a[data-toggle]:hover {
 }
 
 .carclass-area__item {
-	flex: 1 1 20%;
+	flex: 1 1 33.33%;
 	display: flex;
 	flex-direction: column;
 	text-decoration: none;
@@ -3537,18 +3537,27 @@ a[data-toggle]:hover {
 		transform .3s ease;
 }
 
+.carclass-area__item_cabrio {
+	display: flex;
+	flex: unset;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
 .carclass-area__item:hover {
 	color: #fff;
 	transform: scale(1.03);
 }
 
-.carclass-area__item {}
-
-.carclass-area__item_cabrio {}
-
 .carclass-area__image {
 	padding: 0 0 58% 0;
 	overflow: hidden;
+	position: relative;
+}
+
+.carclass-area__image_cabrio {
+	padding: 0;
 	position: relative;
 }
 
@@ -3561,6 +3570,13 @@ a[data-toggle]:hover {
 	top: 0;
 	left: 0;
 }
+
+.carclass-area__img_cabrio {
+	position: relative;
+	width: 50%;
+	height: 50%;
+}
+
 
 .carclass-area__text {
 	text-align: center;
@@ -3621,4 +3637,8 @@ button.car-card__order.map-show:hover {
 
 .footer-widget-area a.map-show[target="_blank"]:hover {
 	color: #000 !important;
+}
+
+.carclass-area__section-title {
+	font-size: 82px;
 }

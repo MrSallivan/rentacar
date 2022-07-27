@@ -3676,3 +3676,21 @@ button.car-card__order.map-show:hover {
 .carclass-area__section-title {
 	font-size: 82px;
 }
+
+.slideshowcars-cabs__sort {}
+
+.slideshowcars-cabs__sort-cont {
+	display: flex;
+}
+
+.slideshowcars-cabs__sort-item {
+	display: block;
+	margin: 0 0 0 15px;
+	cursor: pointer;
+}
+
+.fa {}
+
+.fa-arrow-circle-o-down {}
+
+.fa-arrow-circle-o-up {}

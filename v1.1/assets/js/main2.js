@@ -135,3 +135,31 @@ detailsBtns.forEach(item=>{
 	})
 })
 
+document.querySelector('.slideshowcars-cabs__sort-item_up').addEventListener('click', ()=>{
+	const elements = document.querySelectorAll('.car-card')
+	console.log(elements)
+	const sorted = [...elements].sort((a,b) => {
+		const priceElA = a.querySelector('.car-card__coast')
+		const priceElB = b.querySelector('.car-card__coast')
+		const getPrice = (el) => parseInt(el.innerHTML.slice(3))
+		return getPrice(priceElA) - getPrice(priceElB);
+	})
+	const resultEl = document.querySelector('.slideshowcars-cabs-cards')
+	resultEl.innerHTML = null;
+	sorted.forEach(el => resultEl.appendChild(el))
+
+})
+document.querySelector('.slideshowcars-cabs__sort-item_down').addEventListener('click', () => {
+	const elements = document.querySelectorAll('.car-card')
+	console.log(elements)
+	const sorted = [...elements].sort((a, b) => {
+		const priceElA = a.querySelector('.car-card__coast')
+		const priceElB = b.querySelector('.car-card__coast')
+		const getPrice = (el) => parseInt(el.innerHTML.slice(3))
+		return getPrice(priceElB) - getPrice(priceElA);
+	})
+	const resultEl = document.querySelector('.slideshowcars-cabs-cards')
+	resultEl.innerHTML = null;
+	sorted.forEach(el => resultEl.appendChild(el))
+
+})

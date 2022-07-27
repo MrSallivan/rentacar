@@ -201,11 +201,10 @@
 		flex: 0 1 50%;
 		justify-content: space-between;
 	}
-
-	/* .carclass-area__item_yaht {
-		margin: 0 auto;
-	} */
-
+	.slideshowcars-cabs-cards{
+		justify-content: center;
+	}
+	
 	.car-details-content-h2 {
 		display: flex;
 		flex-direction: column;

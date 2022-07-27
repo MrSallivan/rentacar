@@ -1509,7 +1509,7 @@ body,
 }
 
 .slideshowcontent h1 {
-	color: var(--orange);
+	color: var(--white-text);
 	margin-bottom: 20px;
 }
 
@@ -3486,13 +3486,13 @@ body,
 .slideshowcontent {
 	display: flex;
 	flex-direction: column;
-	align-items: flex-start;
+	align-items: center;
 	justify-content: center;
 	margin-top: 0;
 }
 
 .slideshowcontent__header {
-	font-size: 60px;
+	font-size: 120px;
 	font-weight: 700;
 	font-family: 'Montserrat', Arial, sans-serif;
 	line-height: 1;
@@ -3506,7 +3506,7 @@ body,
 }
 
 .slideshowcontent__h1 {
-	font-size: 24px !important;
+	font-size: 50px !important;
 }
 
 
@@ -3521,6 +3521,7 @@ a.map-show:hover {
 
 .slideshowcontent_btn {
 	transition: background-color .3s ease;
+	font-size: 30px;
 }
 
 .slideshowcontent_btn:hover {
@@ -3579,7 +3580,7 @@ a[data-toggle]:hover {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	font-size: 75px;
+	font-size: calc(30px + 20 * (100vw / 1140));;
 	font-weight: 700;
 	color: #fff !important;
 }
@@ -3674,7 +3675,7 @@ button.car-card__order.map-show:hover {
 }
 
 .carclass-area__section-title {
-	font-size: 82px;
+	font-size: calc(30px + 25 * (100vw / 1140));
 }
 
 .slideshowcars-cabs__sort {}

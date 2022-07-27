@@ -15,18 +15,14 @@ inputNameCarInDetails.setAttribute('value', carTitle)
 //Вставка картинок из карточки в описание
 let carImages = JSON.parse(localStorage.getItem('carImages'))
 let carImagesLength = localStorage.getItem('carImagesLength')
-console.log(carImages, +carImagesLength)
 
 let slider = document.querySelector('.car-preview-crousel')
-
-console.log(slider)
 
 for (let i = 0; i < +carImagesLength; i++) {
 	let imgStr = carImages[i]
 	imgStr = imgStr.trim().split(" ")
 	imgStr = imgStr[2].slice(5).slice(0, -1)
 
-	console.log(imgStr)
 	let scp = document.createElement('div')
 	scp.classList.add('single-car-preview')
 	scp.classList.add('item')

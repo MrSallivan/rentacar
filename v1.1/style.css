@@ -3698,3 +3698,7 @@ button.car-card__order.map-show:hover {
 .fa-arrow-circle-o-down {}
 
 .fa-arrow-circle-o-up {}
+
+.single-footer-widget__footer-menu{
+	justify-content: flex-start;
+}
